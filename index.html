@@ -1,77 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="css/foodCSS.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/kameratStyle.css">
+    <meta charset="utf-8">
+    <title>Tämä on vain fetch-kokeilua</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
 </head>
-
-<body onload="startTime()">
-
-
+<body>
     <div class="containerDiv">
-
-        <div class="column1">
-
-            <div id="txt"></div>
-            <div class="logo">
-                <img class="metropolialogo" src="css/Metropolia_RGB_linearBlue.png">
+        <div class="centeredDiv">
+            <div class="otsikkoDiv">
+                <div class="aikaOtsikko">Aika</div>
+                <div class="linjaOtsikko">Linja</div>
+                <div class="maaranpaaOtsikko">Määränpää</div>
+                <div class="pysakkiOtsikko">Pysäkki</div>
+                <div class="kavelyaikaOtsikko">Kävelyaika</div>
             </div>
-            <div class="tiedote">
-                <h2>Uusi kulunvalvonta Myyrmäessä</h2>
-                <p>Kulkuoikeuden voi rekisteröidä tarkoitukseen varatuilla tietokoneilla. Niitä on sijoitettu eri
-                    puolille kampusta. Rekisteröitäväksi kortiksi kelpaa ainakin: HSL:n matkakortti ja Metropolian
-                    kirjastokortti. Rekisteröinti tapahtuu kirjautumalla Metropolia-tunnuksilla. Rekisteröityä korttia
-                    voi käyttää Myyrmäen sekä Myllypuron kampuksien ovien sähkölukkojen avaamiseen.</p>
-            </div>
-
-
-
-            <div class="kelikamerat">
-                <img id="eka">
-                <img id="toka">
-                <div id="lampotilaDiv"></div>
-            </div>
-
-
-
-        </div>
-
-
-        <div class="column2">
-
-
-            <div class="centeredDiv">
-                <div class="otsikkoDiv">
-                    <div class="aikaOtsikko">Aika</div>
-                    <div class="linjaOtsikko">Linja</div>
-                    <div class="maaranpaaOtsikko">Määränpää</div>
-                    <div class="pysakkiOtsikko">Pysäkki</div>
-                    <div class="kavelyaikaOtsikko">Kävelyaika</div>
-                </div>
-                <div class="dataDiv">
-
-                </div>
-            </div>
-
-
-            <div class="ruokalista">
-                <img class="header" src="css/sdoexo.png">
-                <ul id="foodList"></ul>
-                <img id="ruokakuva" src="css/food.png">
+            <div class="dataDiv">
+                
             </div>
         </div>
     </div>
-
+<script src="main.js"></script>
 </body>
-<script rel="script" src="hslApi/main.js"></script>
-<script rel="script" src="foodFetch.js"></script>
-<script rel="script" src="clock.js"></script>
-<script rel="script" src="kelikamerat.js"></script>
-
 </html>
